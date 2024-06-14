@@ -3,7 +3,7 @@
 import argparse
 import threading
 import time
-from scapy.all import ARP, Ether, srp, send, sniff, IP, UDP, DNS, DNSQR, DNSRR, conf, get_if_addr, get_if_hwaddr, sr1
+from scapy.all import *
 
 def send_arp_request(ip, single = False, timeout = 5):
     request = ARP(pdst=ip)
